@@ -5,7 +5,7 @@ namespace Duck_Strategy
 {
     public class Duck
     {
-        public IQuackBehaviour QuackBehaviour { get; set; }
+        public IQuackBehaviour QuackBehaviour {private get; set; }
 
         public Duck(IQuackBehaviour quackBehaviour)
         {

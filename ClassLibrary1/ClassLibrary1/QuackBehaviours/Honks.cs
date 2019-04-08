@@ -6,7 +6,7 @@ namespace Duck_Strategy.QuackBehaviours
 {
     public class Honks : IQuackBehaviour
     {
-        public void Quack()
+        public override void Quack()
         {
             Console.WriteLine("Honk");
         }

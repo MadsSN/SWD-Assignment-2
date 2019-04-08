@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duck_Strategy", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duck_Decorator", "Duck_Decorator\Duck_Decorator.csproj", "{3BAA451C-414C-49FF-9A6B-AEF1FA58F462}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duck", "Duck\Duck.csproj", "{A23AEFE9-25DA-4682-8A5D-8033517B103A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3BAA451C-414C-49FF-9A6B-AEF1FA58F462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BAA451C-414C-49FF-9A6B-AEF1FA58F462}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BAA451C-414C-49FF-9A6B-AEF1FA58F462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23AEFE9-25DA-4682-8A5D-8033517B103A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23AEFE9-25DA-4682-8A5D-8033517B103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23AEFE9-25DA-4682-8A5D-8033517B103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23AEFE9-25DA-4682-8A5D-8033517B103A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ namespace Duck_Strategy.QuackBehaviours
 {
     public class SqueakThenQuacks : Squeaks
     {
-        public void Quack()
+        public override void Quack()
         {
             base.Quack();
             Console.WriteLine("Quack");

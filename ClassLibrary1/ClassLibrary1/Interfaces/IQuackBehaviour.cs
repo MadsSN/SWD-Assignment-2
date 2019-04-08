@@ -5,8 +5,8 @@ using System.Text;
 namespace Duck_Strategy.Interfaces
 
 {
-    public interface IQuackBehaviour
+    public abstract class IQuackBehaviour
     {
-        void Quack();
+        public abstract void Quack();
     }
 }
