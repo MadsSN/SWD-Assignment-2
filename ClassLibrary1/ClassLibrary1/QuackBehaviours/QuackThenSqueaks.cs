@@ -8,7 +8,8 @@ namespace Duck_Strategy.QuackBehaviours
     {
         public void Quack()
         {
-            Console.WriteLine("Quack, Squeak");
+            base.Quack();
+            Console.WriteLine("Squeak");
         }
     }
 }

@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DDuck_Strategyuck.Interfaces;
+using Duck_Strategy.Interfaces;
 namespace Duck_Strategy.QuackBehaviours
 {
-    public class SqueakThenHonks : IQuackBehaviour
+    public class SqueakThenHonks : Squeaks
     {
         public void Quack()
         {
-            Console.WriteLine("Squeak, Honk");
+            base.Quack();
+            Console.WriteLine("Honk");
         }
     }
 }

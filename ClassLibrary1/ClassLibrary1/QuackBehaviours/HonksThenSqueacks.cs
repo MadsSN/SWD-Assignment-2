@@ -4,11 +4,12 @@ using System.Text;
 using Duck_Strategy.Interfaces;
 namespace Duck_Strategy.QuackBehaviours
 {
-    public class HonksThenSqueacks : IQuackBehaviour
+    public class HonksThenSqueaks : Honks
     {
         public void Quack()
         {
-            Console.WriteLine("Honk, Squeack");
+            base.Quack();
+            Console.WriteLine("Squeak");
         }
     }
 }
