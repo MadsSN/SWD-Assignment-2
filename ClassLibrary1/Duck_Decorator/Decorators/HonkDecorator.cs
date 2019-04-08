@@ -15,6 +15,7 @@ namespace Duck_Decorator.QuackBehaviours
 
         public void Quack()
         {
+            base.Quack();
             Console.WriteLine("Honk");
         }
     }
