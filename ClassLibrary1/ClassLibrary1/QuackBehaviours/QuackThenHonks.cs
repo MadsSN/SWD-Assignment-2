@@ -9,7 +9,7 @@ namespace Duck_Strategy.QuackBehaviours
         public override void Quack()
         {
             base.Quack();
-            Console.WriteLine("Quack, Honk");
+            Console.WriteLine("Honk");
         }
     }
 }
