@@ -5,9 +5,9 @@ using Duck_Decorator.Interfaces;
 
 namespace Duck_Decorator.Base_Objects
 {
-    class BaseQuackBehaviour : IQuackBehaviour
+    public class BaseQuackBehaviour : IQuackBehaviour
     {
-        public void Quack()
+        public override void Quack()
         {
             //Logs nothing. 
         }

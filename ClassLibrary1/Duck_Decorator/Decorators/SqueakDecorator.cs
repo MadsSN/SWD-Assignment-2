@@ -13,7 +13,7 @@ namespace Duck_Decorator.QuackBehaviours
 
         }
 
-        public void Quack()
+        public override void Quack()
         {
             base.Quack();
             Console.WriteLine("Squeak");

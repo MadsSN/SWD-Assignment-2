@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Duck_Decorator.Interfaces
 {
-    public interface IQuackBehaviour
+    public abstract class IQuackBehaviour
     {
-        void Quack();
+        public abstract void Quack();
     }
 }

@@ -15,7 +15,7 @@ namespace Duck_Decorator.Decorators
             _quackBehaviour = quackBehaviour;
         }
 
-        public void Quack()
+        public override void Quack()
         {
             _quackBehaviour.Quack();
         }
