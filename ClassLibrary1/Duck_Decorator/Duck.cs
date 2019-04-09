@@ -6,16 +6,16 @@ namespace Duck_Decorator
 {
     public class Duck
     {
-        public IQuackBehaviour QuackBehaviour { get; set; }
+        public ISoundBehaviour SoundBehaviour { get; set; }
 
-        public Duck(IQuackBehaviour quackBehaviour)
+        public Duck(ISoundBehaviour soundBehaviour)
         {
-            QuackBehaviour = quackBehaviour;
+            SoundBehaviour = soundBehaviour;
         }
 
         public void Quack()
         {
-            QuackBehaviour.Quack();
+            SoundBehaviour.Sound();
         }
     }
 }

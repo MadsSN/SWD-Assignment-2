@@ -29,8 +29,8 @@ namespace Duck
             Console.WriteLine("Decorator pattern");
 
             //How to use decorator pattern to get same behaviour as Strategy version
-            IQuackBehaviour quackBehaviour_Decorator = new SqueakDecorator(new QuackDecorator(new BaseQuackBehaviour()));
-            Duck_Decorator.Duck duck_decorator = new Duck_Decorator.Duck(quackBehaviour_Decorator);
+            ISoundBehaviour soundBehaviourDecorator = new SqueakSoundDecorator(new QuackSoundDecorator(new BaseSoundBehaviour()));
+            Duck_Decorator.Duck duck_decorator = new Duck_Decorator.Duck(soundBehaviourDecorator);
 
             //Test
             duck_decorator.Quack();

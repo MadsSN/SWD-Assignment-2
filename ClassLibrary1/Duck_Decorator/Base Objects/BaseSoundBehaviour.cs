@@ -7,7 +7,7 @@ namespace Duck_Decorator.Base_Objects
 {
     public class BaseQuackBehaviour : IQuackBehaviour
     {
-        public override void Quack()
+        public override void Sound()
         {
             //Logs nothing. 
         }

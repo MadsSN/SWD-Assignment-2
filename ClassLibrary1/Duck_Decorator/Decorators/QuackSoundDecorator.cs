@@ -6,16 +6,16 @@ using Duck_Decorator.Interfaces;
 
 namespace Duck_Decorator.QuackBehaviours
 {
-    public class QuackDecorator : QuackBehaviourDecorator
+    public class QuackSoundDecorator : SoundBehaviourDecorator
     {
-        public QuackDecorator(IQuackBehaviour quackBehaviour) : base(quackBehaviour)
+        public QuackSoundDecorator(ISoundBehaviour soundBehaviour) : base(soundBehaviour)
         {
 
         }
 
-        public override void Quack()
+        public override void Sound()
         {
-            base.Quack();
+            base.Sound();
             Console.WriteLine("Quack");
         }
     }
