@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using Duck_Decorator.Interfaces;
 using Duck_Decorator_Pure.Decorators;
-using Duck_Decorator_Pure.Interfaces;
 
 namespace Duck_Decorator_Pure.QuackBehaviours
 {
-    public class SqueakSoundDecorator : DuckDecorator
+    public class QuackDuckDecorator : DuckDecorator
     {
-        public SqueakSoundDecorator(IDuck duck) : base(duck)
+        public QuackDuckDecorator(IDuck duck) : base(duck)
         {
 
         }
@@ -17,12 +16,12 @@ namespace Duck_Decorator_Pure.QuackBehaviours
         public override void Sound()
         {
             base.Sound();
-            Squeak();
+            Quack();
         }
 
-        private void Squeak()
+        private void Quack()
         {
-            Console.WriteLine("Squeak");
+            Console.WriteLine("Quack");
         }
     }
 }

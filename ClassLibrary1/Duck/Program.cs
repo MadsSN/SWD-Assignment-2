@@ -4,7 +4,10 @@ using Duck_Decorator;
 using Duck_Decorator.Base_Objects;
 using Duck_Decorator.Interfaces;
 using Duck_Strategy.QuackBehaviours;
-using Duck_Decorator.QuackBehaviours;
+using Duck_Decorator_Pure.QuackBehaviours;
+using QuackSoundDecorator = Duck_Decorator.QuackBehaviours.QuackSoundDecorator;
+using SqueakSoundDecorator = Duck_Decorator.QuackBehaviours.SqueakSoundDecorator;
+
 namespace Duck
 {
     class Program
@@ -34,6 +37,17 @@ namespace Duck
 
             //Test
             duck_decorator.Quack();
+
+            //Now pure decorator pattern
+            //Now Decorator pattern
+            Console.WriteLine();
+            Console.WriteLine("Pure Decorator pattern");
+
+            //How to use decorator pattern to get same behaviour as Strategy version
+            IDuck duck = new HonkDuckDecorator(new Duck_Decorator_Pure.Duck());
+
+            //Test
+            duck.Sound();
         }
     }
 }

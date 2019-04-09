@@ -6,22 +6,22 @@ using Duck_Decorator_Pure.Decorators;
 
 namespace Duck_Decorator_Pure.QuackBehaviours
 {
-    public class QuackSoundDecorator : DuckDecorator
+    public class HonkDuckDecorator : DuckDecorator
     {
-        public QuackSoundDecorator(IDuck duck) : base(duck)
+        public HonkDuckDecorator(IDuck duck) : base(duck)
         {
-
+            
         }
 
         public override void Sound()
         {
             base.Sound();
-            Quack();
+            Honk();
         }
 
-        private void Quack()
+        private void Honk()
         {
-            Console.WriteLine("Quack");
+            Console.WriteLine("Honk");
         }
     }
 }

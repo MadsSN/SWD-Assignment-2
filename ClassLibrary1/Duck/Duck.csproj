@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\Duck_Strategy.csproj" />
     <ProjectReference Include="..\Duck_Decorator\Duck_Decorator.csproj" />
+    <ProjectReference Include="..\Duck_Decorator_Pure\Duck_Decorator_Pure.csproj" />
   </ItemGroup>
 
 </Project>
