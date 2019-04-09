@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
-using Duck_Decorator.Interfaces;
+using Duck_Decorator_Pure.Interfaces;
 
 namespace Duck_Decorator_Pure.Decorators
 {
@@ -15,9 +15,14 @@ namespace Duck_Decorator_Pure.Decorators
             _duck = duck;
         }
 
-        public override void Sound()
+        public virtual void Sound()
         {
             _duck.Sound();
+        }
+
+        public virtual void Movement()
+        {
+            _duck.Movement();
         }
     }
 }

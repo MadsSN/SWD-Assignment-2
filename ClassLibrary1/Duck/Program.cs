@@ -3,6 +3,7 @@ using Duck_Strategy;
 using Duck_Decorator;
 using Duck_Decorator.Base_Objects;
 using Duck_Decorator.Interfaces;
+using Duck_Decorator_Pure.Interfaces;
 using Duck_Strategy.QuackBehaviours;
 using Duck_Decorator_Pure.QuackBehaviours;
 using QuackSoundDecorator = Duck_Decorator.QuackBehaviours.QuackSoundDecorator;
@@ -44,10 +45,28 @@ namespace Duck
             Console.WriteLine("Pure Decorator pattern");
 
             //How to use decorator pattern to get same behaviour as Strategy version
-            IDuck duck = new HonkDuckDecorator(new Duck_Decorator_Pure.Duck());
+            IDuck duck = new QuackDuckDecorator(new HonkDuckDecorator(new Duck_Decorator_Pure.Duck()));
 
-            //Test
+
+
+            //Test sound
             duck.Sound();
+
+            //Want duck to make stepping sounds?
+            duck = new StepDuckDecorator(new StepDuckDecorator(duck));
+
+            //Step sound
+            Console.WriteLine();
+            Console.WriteLine("Now duck do steps");
+            duck.Movement();
+
+            //Want duck to make stepping sounds?
+            duck = new JumpDuckDecorator(new JumpDuckDecorator((duck)));
+
+            //Step sound
+            Console.WriteLine();
+            Console.WriteLine("Now duck do Jumps as well");
+            duck.Movement();
         }
     }
 }
