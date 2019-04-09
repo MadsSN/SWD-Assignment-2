@@ -15,14 +15,19 @@ namespace Duck_Decorator_Pure.Decorators
             _duck = duck;
         }
 
-        public virtual void Sound()
+        public virtual void MakeSound()
         {
-            _duck.Sound();
+            _duck.MakeSound();
         }
 
-        public virtual void Movement()
+        public virtual void Move()
         {
-            _duck.Movement();
+            _duck.Move();
+        }
+
+        public virtual void Eat()
+        {
+            _duck.Eat();
         }
     }
 }

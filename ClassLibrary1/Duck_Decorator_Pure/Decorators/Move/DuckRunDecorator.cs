@@ -5,22 +5,22 @@ using Duck_Decorator_Pure.Interfaces;
 using Duck_Decorator_Pure.Decorators;
 namespace Duck_Decorator_Pure.QuackBehaviours
 {
-    public class StepDuckDecorator : DuckDecorator
+    public class DuckRunDecorator : DuckDecorator
     {
-        public StepDuckDecorator(IDuck duck) : base(duck)
+        public DuckRunDecorator(IDuck duck) : base(duck)
         {
 
         }
 
-        public override void Movement()
+        public override void Move()
         {
-            base.Movement();
-            Step();
+            base.Move();
+            Run();
         }
 
-        private void Step()
+        private void Run()
         {
-            Console.WriteLine("Step");
+            Console.WriteLine("Run");
         }
     }
 }

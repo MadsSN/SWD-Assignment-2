@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Text;
 using Duck_Decorator_Pure.Interfaces;
 using Duck_Decorator_Pure.Decorators;
-
 namespace Duck_Decorator_Pure.QuackBehaviours
 {
-    public class QuackDuckDecorator : DuckDecorator
+    public class DuckGrassDecorator : DuckDecorator
     {
-        public QuackDuckDecorator(IDuck duck) : base(duck)
+        public DuckGrassDecorator(IDuck duck) : base(duck)
         {
 
         }
 
-        public override void Sound()
+        public override void Eat()
         {
-            base.Sound();
-            Quack();
+            base.Move();
+            Grass();
         }
 
-        private void Quack()
+        private void Grass()
         {
-            Console.WriteLine("Quack");
+            Console.WriteLine("Grass");
         }
     }
 }

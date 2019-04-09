@@ -6,12 +6,17 @@ namespace Duck_Decorator_Pure
 {
     public class Duck : IDuck
     {
-        public void Sound()
+        public void MakeSound()
         {
            
         }
 
-        public void Movement()
+        public void Move()
+        {
+
+        }
+
+        public void Eat()
         {
 
         }

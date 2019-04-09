@@ -5,16 +5,16 @@ using Duck_Decorator_Pure.Interfaces;
 using Duck_Decorator_Pure.Decorators;
 namespace Duck_Decorator_Pure.QuackBehaviours
 {
-    public class JumpDuckDecorator : DuckDecorator
+    public class DuckJumpDecorator : DuckDecorator
     {
-        public JumpDuckDecorator(IDuck duck) : base(duck)
+        public DuckJumpDecorator(IDuck duck) : base(duck)
         {
 
         }
 
-        public override void Movement()
+        public override void Move()
         {
-            base.Movement();
+            base.Move();
             Jump();
         }
 

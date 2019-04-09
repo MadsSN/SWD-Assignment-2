@@ -6,7 +6,8 @@ namespace Duck_Decorator_Pure.Interfaces
 {
     public interface IDuck
     {
-        void Sound();
-        void Movement();
+        void MakeSound();
+        void Move();
+        void Eat();
     }
 }
