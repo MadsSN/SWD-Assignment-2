@@ -4,9 +4,9 @@ using System.Text;
 using Duck_Strategy.Interfaces;
 namespace Duck_Strategy.QuackBehaviours
 {
-    public class Honks : IQuackBehaviour
+    public class Honks : ISoundBehaviour
     {
-        public override void Quack()
+        public override void Sound()
         {
             Console.WriteLine("Honk");
         }

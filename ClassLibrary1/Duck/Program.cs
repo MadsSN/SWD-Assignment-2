@@ -18,8 +18,8 @@ namespace Duck
             Console.WriteLine("Stategy pattern first");
 
             //How to use strategy pattern
-            QuackThenSqueaks quackBehaviour_Strategy = new QuackThenSqueaks();
-            Duck_Strategy.Duck duck_strategy = new Duck_Strategy.Duck(quackBehaviour_Strategy);
+            QuackThenSqueaks quackBehaviourStrategy = new QuackThenSqueaks();
+            Duck_Strategy.Duck duck_strategy = new Duck_Strategy.Duck(quackBehaviourStrategy);
 
             //Test
             duck_strategy.Quack();

@@ -5,7 +5,7 @@ using Duck_Decorator.Interfaces;
 
 namespace Duck_Decorator.Base_Objects
 {
-    public class BaseQuackBehaviour : IQuackBehaviour
+    public class BaseSoundBehaviour : ISoundBehaviour
     {
         public override void Sound()
         {

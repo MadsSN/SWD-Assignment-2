@@ -5,8 +5,8 @@ using System.Text;
 namespace Duck_Strategy.Interfaces
 
 {
-    public abstract class IQuackBehaviour
+    public abstract class ISoundBehaviour
     {
-        public abstract void Quack();
+        public abstract void Sound();
     }
 }

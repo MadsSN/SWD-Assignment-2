@@ -5,16 +5,16 @@ namespace Duck_Strategy
 {
     public class Duck
     {
-        public IQuackBehaviour QuackBehaviour {private get; set; }
+        public ISoundBehaviour SoundBehaviour {private get; set; }
 
-        public Duck(IQuackBehaviour quackBehaviour)
+        public Duck(ISoundBehaviour soundBehaviour)
         {
-            QuackBehaviour = quackBehaviour;
+            SoundBehaviour = soundBehaviour;
         }
 
         public void Quack()
         {
-            QuackBehaviour.Quack();
+            SoundBehaviour.Sound();
         }
     }
 }
