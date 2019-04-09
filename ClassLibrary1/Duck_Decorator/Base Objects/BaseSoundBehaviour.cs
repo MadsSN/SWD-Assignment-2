@@ -9,7 +9,12 @@ namespace Duck_Decorator.Base_Objects
     {
         public override void Sound()
         {
-            //Logs nothing. 
+            BaseSound();
+        }
+
+        private void BaseSound()
+        {
+
         }
     }
 }
