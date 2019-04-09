@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Duck_Decorator.Interfaces;
 using Duck_Decorator_Pure.Decorators;
-using Duck_Decorator_Pure.Interfaces;
 
 namespace Duck_Decorator_Pure.QuackBehaviours
 {
-    public class QuackSoundDecorator : SoundBehaviourDecorator
+    public class QuackSoundDecorator : DuckDecorator
     {
-        public QuackSoundDecorator(ISoundBehaviour soundBehaviour) : base(soundBehaviour)
+        public QuackSoundDecorator(IDuck duck) : base(duck)
         {
 
         }

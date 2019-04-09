@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Duck_Decorator_Pure.Interfaces
+namespace Duck_Decorator.Interfaces
 {
-    public abstract class ISoundBehaviour
+    public abstract class IDuck
     {
         public abstract void Sound();
     }
