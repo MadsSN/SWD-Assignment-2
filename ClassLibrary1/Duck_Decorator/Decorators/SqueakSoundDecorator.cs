@@ -16,6 +16,11 @@ namespace Duck_Decorator.QuackBehaviours
         public override void Sound()
         {
             base.Sound();
+            Squeak();
+        }
+
+        private void Squeak()
+        {
             Console.WriteLine("Squeak");
         }
     }
